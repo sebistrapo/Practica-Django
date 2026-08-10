@@ -4,6 +4,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('/', views.inicio, name="inicio"),
+    path('inicio/', views.inicio, name="inicio"),
+    path('', views.login, name="login"),
+    path('logout/', views.logout, name="logout"),
+    path('eliminarM/', views.eliminarM, name="eliminarM"),
+    path('actualizarM/', views.actualizarM, name="actualizarM"),
 
 ]

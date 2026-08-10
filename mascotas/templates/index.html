@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cuerpo %}
+    <div class="container">
+        <table border="2px">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Nombre</td>
+                    <td>Raza</td>
+                    <td>Edad</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in datos %}
+                <tr>
+                    <td>{{ i.id_mascota }}</td>
+                    <td>{{ i.nombre }}</td>
+                    <td>{{ i.raza }}</td>
+                    <td>{{ i.edad }}</td>
+                    <td>
+                        <a class="link link-btn linkA" href="{% url 'actualizarM' %}">Actualizar</a>
+                        <a class="link link-btn linkE" href="{% url 'eliminarM' %}">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

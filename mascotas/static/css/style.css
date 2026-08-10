@@ -1,0 +1,103 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+    cursor: default;
+}
+
+.container {max-width: 1200px;}
+h2 {margin: 0;}
+.link{text-decoration: none;}
+.link-btn {
+    color: #333;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background-color .2s ease;
+}
+.linkE {
+    background-color: rgba(225, 80, 80, .914);
+}
+.linkA {
+    background-color: rgba(221, 221, 147, 0.814);
+}
+
+.linkE:hover {
+    background-color: rgb(255, 25, 25);
+}
+.linkA:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+
+header {
+    background-image:
+    radial-gradient(rgb(0, 0, 0, .5)),
+        url('https://imgs.search.brave.com/4DFvHNhWhBAua_WeYbAgNafecpJDbIGdJqkQDGxNsbU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzEv/MDU2Lzc4My9zbWFs/bC9kb2ctYmFja2dy/b3VuZC1kb2ctd2Fs/bHBhcGVyLWdyb3Vw/LW9mLWRvbWVzdGlj/LXBldHMtaW5jbHVk/aW5nLWEtZ3JlZW4t/cGFycm90LWdyZXkt/a2l0dGVuLWhhbXN0/ZXItamFjay1ydXNz/ZWxsLWZyZW5jaC1i/dWxsZG9nLXJhYmJp/dC1hbmQtY2hpaHVh/aHVhLWZyZWUtcGhv/dG8uanBn');
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    place-self: center;
+    place-items: center;
+    width: 100%;
+    padding: 20px;
+
+
+    .nav-link {
+        color: #f3f3f3;
+        transition: transform .2s ease, border-bottom .2s ease;
+    }
+
+    .nav-link:hover{
+        border-bottom: 2px solid #f3f3f3;
+        transform: translateY(5px);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        li {
+            list-style: none;
+            
+        }
+    }
+
+}
+
+#listaM .container {
+    width: 100%;
+    table {
+        border: 2px solid #949799;
+        border-collapse: collapse;
+        width: 100%;
+        thead td {
+            padding: 10px;
+            border: 1px solid #949799;
+            background-color: #d7d7d7;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #949799;
+            background-color: #e8e8e8d4;
+        }
+    }
+}
+
+#listaM {
+    display: grid;
+    place-items: center;
+    margin: 5vh 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: end;
+}
